@@ -16,7 +16,7 @@ List all other files contained in the repo, along with a brief description of ea
 
 2. ncrp.rda This file contains juvenile justice indicators for American states, published by the Bureau of Justice Statistics, specifically by the project National Corrections Reporting Program (NCRP), available here: http://www.bjs.gov/ 
 
-3. juv-fac-pop.csv This file contains information on the number of juveniles incarcerated in state facilities in California from 1993 to 2002, I downloaded the pdf files containing the information from this link: http://www.cdcr.ca.gov/Juvenile_Justice/ and manipulated the content to form tables in Excel manually. In this case, I only used one pdf file. If you are interesed in using all the pdf files containing other information on juvenile corrections, it is advisable to develop a script to automatize part of this task. For example, you can download all the files using Bash or Python, then set up the tables manually, since the information is mostly text.
+3. juv-fac-pop.csv This file contains information on the number of juveniles incarcerated in state facilities in California from 1993 to 2002, I downloaded the pdf files containing the information from this link: http://www.cdcr.ca.gov/Juvenile_Justice/ and manipulated the content to form tables in Excel, manually. In this case, I only used one pdf file. If you are interesed in using all the pdf files containing other information on juvenile corrections, it is advisable to develop a script to automatize part of this task. For example, you can download all the files using Bash or Python, then set up the tables manually, since the information is mostly text.
 
 
 ### Code
