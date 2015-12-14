@@ -1,31 +1,33 @@
-This is a template you can use for your final project. Fill in each section with information on your own project.
+Juvenile Justice in California
 
 ## Short Description
 
-Give a short, 1-2 paragraph description of your project. Focus on the code, not the theoretical / substantive / academic side of things. 
+This project uses Bash and R to collect, clean, and analyze statistical data on juvenile justice in the state on California
+I identify the trends on incarceration at the state and county level using graphical analysis with the package ggplot2.
+RDD Tools is a package I used to perform regression analysis setting a database as a "regression discontinuity object" as suggested by the graphical analysis conducted previously.
+
+Using both packages I found that juvenile incarceration trends in California have decreased over time, particularly after 1996, when a policy increased the price to be paid by counties to commit a juvenile to prison. RDD alloed to identify that a sharp decrease occured around this time. Further data collection and analysis is needed to identify the effect of other variables.
 
 ## Dependencies
 
-List what software your code depends on, as well as version numbers, like so:.
+I use the following software:
 
 1. R, version 3.1
 2. Python 2.7, Anaconda distribution.
 
-(In your code itself, includes commands that install required packages.)
 
 ## Files
-
-List all other files contained in the repo, along with a brief description of each one, like so:
+This repository contains the following files:
 
 ### Data
 
-1. polity.csv: The PolityVI dataset, available here: http://www.systemicpeace.org/inscrdata.html
-2. nyt.csv: Contains data from the New York Times API collected via collect-nyt.ipynb . Includes information on all articles containing the term "Programmer Cat", 1980-2010.
-3. analysis-dataset.csv: The final Analysis Dataset derived from the raw data above. It includes country-year values for all UN countries 1980-2010, with observations for the following variables: 
-    - *ccode*: Correlates of War numeric code for country observation
-    - *year*: Year of observation
-    - *polity*: PolityVI score
-    - *nyt*: Number of New York Times articles about "Programmer Cat"
+01. 01-juv-inc-ca.csv This file contains information on the number of juveniles incarcerated in state facilities in California from 1993 to 2002, I downloaded the pdf files containing the information from this link: http://www.cdcr.ca.gov/Juvenile_Justice/ and manipulated the content to form tables in Excel, manually. In this case, I only used one pdf file. If you are interesed in using all the pdf files containing other information on juvenile corrections, it is advisable to develop a script to automatize part of this task. For example, you can download all the files using Bash or Python, then set up the tables manually, since the information is mostly text.
+
+
+02. 02-juv-arrests-ca: This files contains the number of incarcerated individuals in state facilities from 10
+1. 01-juv-arrest-ca.csv This file contains statistics on juvenile arrests in California from 1980 to 2013, available here: http://openjustice.doj.ca.gov/data
+
+03. 03-ncrp.rda This file contains juvenile justice indicators for American states, published by the Bureau of Justice Statistics, specifically by the project National Corrections Reporting Program (NCRP), available here: http://www.bjs.gov/ 
 
 ### Code
 
